@@ -1,0 +1,9 @@
+{
+    "name": "alpha-leonis/elementor-addons",
+    "require": {
+        "facebook/graph-sdk": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {"AlphaLeonisAddons\\": "app/"}
+    }
+}

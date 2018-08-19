@@ -1,0 +1,83 @@
+/* Card */
+
+.al-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.al-cards-container {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.al-card {
+    height: 100%;
+}
+
+.al-cards-container > .al-card-wrapper {
+    flex: 0 1 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.al-cards-container div.al-card-thumbnail {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.al-cards-container p {
+    word-break: break-word;
+}
+
+.al-cards-container .al-card-date {
+    line-height: 1.3em;
+    font-size: 12px;
+    margin-bottom: 13px;
+    color: #adadad;
+}
+
+div.al-card-thumbnail .al-facebook-feed-hover-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1000px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity .5s;
+}
+div.al-card-thumbnail:hover .al-facebook-feed-hover-icon {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .al-cards-container > .al-card-wrapper {
+        flex: 0 1 100% !important;
+    }
+}
+
+/* Hover Item */
+.ala-hover-item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.ala-hover-item__text {
+    position: relative;
+    z-index: 10;
+}
+
+.ala-hover-item canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
