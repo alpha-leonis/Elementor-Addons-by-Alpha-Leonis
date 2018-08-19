@@ -62,22 +62,3 @@ div.al-card-thumbnail:hover .al-facebook-feed-hover-icon {
         flex: 0 1 100% !important;
     }
 }
-
-/* Hover Item */
-.ala-hover-item {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.ala-hover-item__text {
-    position: relative;
-    z-index: 10;
-}
-
-.ala-hover-item canvas {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
